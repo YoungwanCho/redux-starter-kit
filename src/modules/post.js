@@ -31,6 +31,14 @@ export default applyPenders(reducer, [
           body
         }
       }
+    },
+    onCancel: (state, action) => {
+      return {
+        data: {
+          title: '취소됨',
+          body: '취소됨'
+        }
+      }
     }
   },
 ]);
